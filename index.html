@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Vitor Dicas</title>
+  <meta content="author" name="Luiz Nickel">
+  <meta content="description" name="Vitor Dicas"/>
+  <link rel="stylesheet" href="assets/css/folha.css"/>
+  <link rel="stylesheet" href="assets/css/materialize.min.css"/>
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+</head>
+<body>
+  <div class="intro indigo accent-2 lighten- z-depth-1 center">
+  <img src="assets/img/logo.png" alt="Dicas magnificas à seu alcance.">
+  <h1 class="header center black-text">Vitor Dicas!</h1>
+  <h4 class="center black-text">Sua fonte diária de conhecimento.</h4>
+  <div>
+        <h4 class="center black-text" id="geradica">SUA DICA AQUI </h4> <br>
+      <button class="btn waves-effect waves-light" type="button" onclick="vitorDicas()">GERAR DICA</button>
+  </div> <br>
+</div>
+
+<h5 align="center">Este projeto ainda se encontra em Beta! Contribua
+  <a href="http://github.com/lelufg/vitordicas/">aqui</a></h5>
+
+<!-- Footer at the end of the page duh -->
+<footer class="page-footer">
+         <div class="container">
+           <div class="row">
+             <div class="col l6 s12">
+               <h5 class="white-text">Gostou da ideia? Espalhe!</h5>
+               <p class="grey-text text-lighten-4">Vitor Dicas é um projeto aberto para todos! Compartilhe,
+                  e ajude também a tornar o banco de dicas ainda maior!</p>
+             </div>
+             <div class="col l4 offset-l2 s12">
+               <strong class="white-text">Compartilhar</strong> <br>
+               <a href="http://ctt.ec/jQFbB"><img src="http://clicktotweet.com/img/tweet-graphic-4.png" alt="Tweet: Eu estou usando o #VitorDicas do @GrupoLEV para conselhos 10/10! " /></a>
+             </div>
+             </div>
+           </div>
+         </div>
+         <div class="footer-copyright">
+           <div class="container">
+             <div class="chip">
+                <img src="assets/img/luiz.jpg">
+                &copy; 2016, <a href="http://github.com/lelufg" target="_new">Luiz Nickel.</a>
+              </div>
+           <strong class="grey-text text-lighten-4 right">"Não esquece de compartilhar vei"</strong>
+           </div>
+         </div>
+       </footer>
+
+
+<script>
+var arrayDicas=['Traz comida', 'Vei', 'Vem estudar aqui na RUY 2h30', 'Biquinho', 'Marcos tá te procurando', '310b',
+    'Cabe +1?', 'Cadê titia', 'Bahianoo', ':D', 'Emanuel, *piada genérica*', 'Luiz, *piada genérica*', 'Luis, *piada genérica*',
+    'Vai dormir rapaz', 'Os melhores cafés sempre são os grátis', 'Vamos embora vei']
+function vitorDicas() {
+    var value = arrayDicas.shift();
+    arrayDicas.push(value);
+document.getElementById("geradica").innerHTML=value;
+}
+</script>
+<script type="text/javascript" src="assets/js/jquery.min.css"></script>
+<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+
+</html>
