@@ -36,4 +36,4 @@ document.getElementById("geradica").innerHTML=value;
 
 Publicidade 
 ==========================
-  (mailto:cabemaisumcontato@gmail.com) cabemaisumcontato@gmail.com -> Este projeto também faz parte do Grupo LEV!
+  (mailto:cabemaisumcontato@gmail.com) cabemaisumcontato@gmail.com -> Este projeto também faz parte do Grupo LEV! Confira outros projetos em (github.com/GrupoLEV)
