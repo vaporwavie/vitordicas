@@ -36,5 +36,4 @@ document.getElementById("geradica").innerHTML=value;
 
 Publicidade 
 ==========================
-  cabemaisumcontato@gmail.com
-  lelufg@hotmail.com
+  luizaugusto@linuxmail.org
