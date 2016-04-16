@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- /Inicio/: Configurando as metas (não as da Dilma) e o CSS -->
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <title>Vitor Dicas</title>
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
 </head>
 <body>
+  <!-- /Corpo/: Estou trabalhando neste site com o Materialize, então sigo suas classes. -->
   <div class="intro indigo accent-2 lighten- z-depth-1 center">
   <img src="assets/img/logo.png" alt="Dicas magnificas à seu alcance.">
   <h1 class="header center black-text">Vitor Dicas!</h1>
@@ -21,21 +23,21 @@
   </div> <br>
 </div>
 
-<h5 align="center">Este projeto ainda se encontra em Beta! Contribua
-  <a href="http://github.com/lelufg/vitordicas/">aqui</a></h5>
+<h5 align="center">Quer contribuir com o código? Dê uma olhada no repositório oficial
+  <a href="http://github.com/lelufg/vitordicas/">aqui</a>!</h5>
 
-<!-- Footer at the end of the page duh -->
+<!-- /Fim/: Rodapé mar lindo que tem (me gabo mesmo) -->
 <footer class="page-footer">
          <div class="container">
            <div class="row">
              <div class="col l6 s12">
-               <h5 class="white-text">Gostou da ideia? Espalhe!</h5>
-               <p class="grey-text text-lighten-4">Vitor Dicas é um projeto aberto para todos! Compartilhe,
-                  e ajude também a tornar o banco de dicas ainda maior!</p>
+               <h5 class="white-text">Vitor Dicas é para todos!</h5>
+               <p class="grey-text text-lighten-4">Este projeto não é lucrativo.
+               Se você quiser ajudar com o suporte do site, faça uma <a class="white-text" href="#">doação</a>!</p>
              </div>
              <div class="col l4 offset-l2 s12">
                <strong class="white-text">Compartilhar</strong> <br>
-               <a href="http://ctt.ec/jQFbB"><img src="http://clicktotweet.com/img/tweet-graphic-4.png" alt="Tweet: Eu estou usando o #VitorDicas do @GrupoLEV para conselhos 10/10! " /></a>
+               <a href="http://ctt.ec/jQFbB"><img src="http://clicktotweet.com/img/tweet-graphic-4.png"/></a>
              </div>
              </div>
            </div>
@@ -46,7 +48,7 @@
                 <img src="assets/img/luiz.jpg">
                 &copy; 2016, <a href="http://github.com/lelufg" target="_new">Luiz Nickel.</a>
               </div>
-           <strong class="grey-text text-lighten-4 right">"Não esquece de compartilhar vei"</strong>
+           <strong class="grey-text text-lighten-4 right">"Bota isso aqui no servidor da Ruy Barbosa vei"</strong>
            </div>
          </div>
        </footer>
@@ -54,10 +56,11 @@
 
 <script>
 var arrayDicas=['Traz comida', 'Vei', 'Vem estudar aqui na RUY 2h30', 'Biquinho', 'Marcos tá te procurando', '310b',
-    'Cabe +1?', 'Cadê titia', 'Bahianoo', ':D', 'Emanuel, *piada genérica*', 'Luiz, *piada genérica*', 'Luis, *piada genérica*',
+    'Cabe +1?', 'Cadê titia', ':D', 'Aquela menina é feia vei', 'Trouxe lanche?', 'Vamos estudar domingo 14h',
     'Vai dormir rapaz', 'Os melhores cafés sempre são os grátis', 'Vamos embora vei']
 function vitorDicas() {
-    var value = arrayDicas.shift();
+    var value = arrayDicas[Math.floor(Math.random() * Math.random() * arrayDicas.length)];
+    // var value = arrayDicas.shift(); I'm testing some stuff, maybe I'll put it back.
     arrayDicas.push(value);
 document.getElementById("geradica").innerHTML=value;
 }
