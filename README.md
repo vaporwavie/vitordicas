@@ -1,9 +1,9 @@
 Sobre
 ===================
 
-Hey! O Vitor Dicas consiste em um gerador de palavras. Então basicamente a mágica é um Array composto de um banco de frases prontas do nosso amigo Vitor e que são ordenados aleatoriamente (ou não);
+Hey! O Vitor Dicas consiste em um gerador de palavras. Então basicamente a mágica é um Array composto de um banco de frases prontas do nosso amigo Vitor e que são ordenados aleatoriamente.
 
-Mágica
+Como Funciona
 ===================
 
 
@@ -20,20 +20,21 @@ Mágica
 ```
 // Array de dicas
 var arrayDicas=['Traz comida', 'Vei', 'Vem estudar aqui na RUY 2h30', 'Biquinho', 'Marcos tá te procurando', '310b',
-    'Cabe +1?', 'Cadê titia', 'Bahianoo', ':D', 'Emanuel, *piada genérica*', 'Luiz, *piada genérica*', 'Luis, *piada genérica*',
-    'Vai dormir rapaz', 'Os melhores cafés sempre são os grátis', 'Vamos embora vei'];
+    'Cabe +1?', 'Cadê titia', ':D', 'Aquela menina é feia vei', 'Trouxe lanche?', 'Vamos estudar domingo 14h',
+    'Vai dormir rapaz', 'Os melhores cafés sempre são os grátis', 'Vamos embora vei']
 ```
 
 > **Dica**: Shift e Push precisam estar no código para a ordem do Array. 
 ```
-// Função para uso do Array e Conversão na Div
+// Condição que vai substituir e gerar uma dica na Div identada
 function vitorDicas() {
+    var value = arrayDicas[Math.floor(Math.random() * Math.random() * arrayDicas.length)];
     var value = arrayDicas.shift();
     arrayDicas.push(value);
-document.getElementById("geradica").innerHTML=value;
+    document.getElementById("geradica").innerHTML=value;
 }
 ```
 
-Publicidade 
+Publicidade e Contato
 ==========================
   luizaugusto@linuxmail.org
