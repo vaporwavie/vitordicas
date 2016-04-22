@@ -19,14 +19,6 @@ margin-bottom: 50px;
     text-transform: uppercase;
 }
 
-.intro h4 {
-    text-transform: uppercase;
-    padding: 1px;
-    color: #333333;
-    display: inline-block;
-    font-size: 2rem;
-}
-
 .intro h3 {
     text-transform: uppercase;
     padding: 1px;
@@ -35,9 +27,17 @@ margin-bottom: 50px;
     font-size: 1rem;
 }
 
+.intro h4 {
+    text-transform: uppercase;
+    padding: 1px;
+    color: #333333;
+    display: inline-block;
+    font-size: 2rem;
+}
+
 .intro h5 {
   text-transform: uppercase;
-  padding: inherit;
+  padding: fixed;
   color: #333333;
   display: inline-block;
   font-size: 1.5rem;
