@@ -37,4 +37,4 @@ function vitorDicas() {
 
 Publicidade e Contato
 ==========================
-  luizaugusto@linuxmail.org
+  eu@luiznickel.com
